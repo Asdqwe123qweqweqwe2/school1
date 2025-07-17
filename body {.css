@@ -1,0 +1,39 @@
+body {
+	background-color: #F0ECED;
+}
+
+* {
+	font-family: 'Raleway', sans-serif;
+}
+
+.back_to_main {
+	position: absolute;
+	top: 130px;
+	left: 7.5%;
+	height: 120px;
+	width: 120px;
+	transform-origin: center;
+	transform: translate(-50%, -60%) rotate(90deg);
+	cursor: pointer;
+	z-index: 1;
+}
+
+.back_to_main .arrow_left {
+	height: 30px;
+	transition: 0.5s;
+}
+
+.back_to_main:hover .arrow_left {
+	transform: translateY(20%);
+}
+
+.visually_hidden {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px);
+	clip: rect(1px, 1px, 1px, 1px);
+	padding:0 !important;
+	border:0 !important;
+	height: 1px !important;
+	width: 1px !important;
+	overflow: hidden;
+}
